@@ -24,8 +24,8 @@ function write_letter(curr,i)
         this.setTimeout(this.write_letter_del,200,curr,i);
     }
 }
-setTimeout(write_letter(0,0),1000);
-function write_letter_del()
+setTimeout(write_letter,1000,0,0);
+function write_letter_del(curr,i)
 {
     var txt = mytext[curr];
     //alert(txt);
